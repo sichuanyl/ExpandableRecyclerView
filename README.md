@@ -1,5 +1,25 @@
 # ExpandableRecyclerView
 
+## Add Dependencies
+
+In Project Gradle
+
+```bash
+allprojects {
+    repositories {
+        ..
+        ..
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+In app Gradle add
+```bash
+	implementation 'com.github.kushalgupta0565:ExpandableRecyclerView:1.0.0'
+```
+
+
 ## Models/Pojo Class Creation
 
 Model for Group Item should extend Group
