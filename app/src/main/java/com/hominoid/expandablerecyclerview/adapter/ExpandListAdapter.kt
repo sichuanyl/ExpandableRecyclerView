@@ -20,13 +20,13 @@ class ExpandListAdapter(
     var context: Context,
     groups: List<ExpandableListItem<*, *>>
 ) : ExpandableRecyclerViewAdapter<ParentVH, ChildVH>(groups), ExpandableListItemClickListener {
-    override fun onCreateGroupViewHolder(parent: ViewGroup?, viewType: Int): ParentVH {
+    override fun onCreateGroupViewHolder(parent: ViewGroup, viewType: Int): ParentVH {
         val view =
             LayoutInflater.from(parent!!.context).inflate(R.layout.list_item, parent, false)
         return ParentVH(view)
     }
 
-    override fun onCreateChildViewHolder(parent: ViewGroup?, viewType: Int): ChildVH {
+    override fun onCreateChildViewHolder(parent: ViewGroup, viewType: Int): ChildVH {
         val view =
             LayoutInflater.from(parent!!.context).inflate(R.layout.list_item, parent, false)
         return ChildVH(view)

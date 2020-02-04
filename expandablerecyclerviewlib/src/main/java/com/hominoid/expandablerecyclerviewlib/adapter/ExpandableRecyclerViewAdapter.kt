@@ -47,9 +47,9 @@ abstract class ExpandableRecyclerViewAdapter<GVH : GroupViewHolder, CVH : ChildV
         }
     }
 
-    abstract fun onCreateGroupViewHolder(parent: ViewGroup?, viewType: Int): GVH
+    abstract fun onCreateGroupViewHolder(parent: ViewGroup, viewType: Int): GVH
 
-    abstract fun onCreateChildViewHolder(parent: ViewGroup?, viewType: Int): CVH
+    abstract fun onCreateChildViewHolder(parent: ViewGroup, viewType: Int): CVH
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val listPos = expandableList.getUnflattenedPosition(position)

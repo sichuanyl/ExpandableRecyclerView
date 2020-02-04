@@ -4,12 +4,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.hominoid.expandablerecyclerview.adapter.ExpandListAdapter
+import com.hominoid.expandablerecyclerview.adapter.MultiViewExpandListAdapter
 import com.hominoid.expandablerecyclerview.model.LocalChild
 import com.hominoid.expandablerecyclerview.model.LocalGroup
 import com.hominoid.expandablerecyclerviewlib.models.ExpandableListItem
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class SingleViewTypeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
