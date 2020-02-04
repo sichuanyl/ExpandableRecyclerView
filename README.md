@@ -16,7 +16,7 @@ allprojects {
 
 In app Gradle add
 ```bash
-	implementation 'com.github.kushalgupta0565:ExpandableRecyclerView:1.0.0'
+	implementation 'com.github.kushalgupta0565:ExpandableRecyclerView:1.0.1'
 ```
 
 
@@ -95,6 +95,18 @@ For Child Items:
 
 ```bash
     public class ExpandListAdapter extends ExpandableRecyclerViewAdapter<ParentVH, ChildVH>
+		implements ExpandableListItemClickListener {
+        	...
+		...
+		...
+		...
+    }
+```
+
+## Expandable Multiple ViewType RecyclerView Adapter Creation
+
+```bash
+    public class MultipleViewTypeExpandListAdapter extends MultiViewTypeExpandaleAdapter<GroupViewHolder, ChildViewHolder>
 		implements ExpandableListItemClickListener {
         	...
 		...
